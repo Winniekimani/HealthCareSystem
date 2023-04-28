@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundd3"
+    tools:context=".BookAppointmentActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="24*7 Healthcare"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/bookAppointmentTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="bookAppointment"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/appointmentName"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/namebckground"
+        android:hint="FullName"
+        android:layout_marginStart="5dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/appointmentAddress"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/namebckground"
+        android:hint="Address"
+        android:layout_marginStart="5dp"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/appointmentNumber"
+        android:layout_width="255dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/namebckground"
+        android:hint="ContactNumber"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_marginStart="5dp"
+        android:id="@+id/appointmentFees"
+        android:layout_width="255dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/namebckground"
+        android:hint="Fees"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/appointmentDate"
+                android:layout_width="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:text="select date"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btnAppDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="20/10/2022"
+                style="?android:spinnerStyle"
+                android:layout_marginStart="40dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/appointmentTime"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:text="select Time"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAppTime"
+                style="?android:spinnerStyle"
+                android:text="10:00"
+
+                android:layout_marginStart="40dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Bookappointment"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+</LinearLayout>
