@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundd3"
+    tools:context=".CartLabActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="24*7 Healthcare"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCartPackageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Location:Pune"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/LTDPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="LabTest and packages"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listviewCart"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbars="vertical" />
+
+
+    <TextView
+        android:id="@+id/tvTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="7dp"
+        android:text="Total Cost:1800/="
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cartDate"
+                android:layout_width="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:text="select date"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"/>
+            <Button
+                android:id="@+id/btnCartDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20/10/2022"
+                style="?android:spinnerStyle"
+                android:layout_marginStart="40dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cartTime"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_height="wrap_content"
+                android:text="select Time"
+                android:textColor="#FFEB3B"
+                android:textSize="20sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCartTimePicker"
+                style="?android:spinnerStyle"
+                android:text="10:00"
+
+                android:layout_marginStart="40dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/btnCartCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="CHECKOUT" />
+
+        <Button
+            android:id="@+id/btnCartBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="BACK" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -36,6 +36,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         btnAppDate = findViewById(R.id.btnAppDate);
         btnAppTime = findViewById(R.id.btnAppTime);
         btnBack = findViewById(R.id.btnBack);
+        btnBook = findViewById(R.id.btnBook);
 
         //set all editTexts to not editable
         appointmentName.setKeyListener(null);
@@ -72,6 +73,13 @@ public class BookAppointmentActivity extends AppCompatActivity {
                 timePickerDialog.show();
             }
         });
+
+       btnBook.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               //code here
+           }
+       });
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

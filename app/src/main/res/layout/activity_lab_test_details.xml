@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundd3"
+    tools:context=".LabTestDetailsActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="24*7 Healthcare"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/labTestLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Deliver Location:Nairobi"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/LTDPackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/labTestLocation"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="LabTest and packages"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edLabTestDetails"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:layout_below="@+id/LTDPackage"
+        android:ems="10"
+        android:text="hi\nhello"
+        android:padding="10dp"
+        android:textColor="@color/white"
+       android:gravity="start|top"/>
+    <TextView
+        android:id="@+id/tvTotalCost"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edLabTestDetails"/>
+    <Button
+        android:id="@+id/btnAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvTotalCost"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ADD TO CART"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAddToCart"
+        android:layout_centerHorizontal="true"
+        android:text="Back"
+       />
+
+</RelativeLayout>

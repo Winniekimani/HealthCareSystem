@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundd3"
+    android:orientation="vertical"
+    tools:context=".LabTestBookActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="24*7 Healthcare"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="80dp"
+        android:text="Please fill all details for booking"
+        android:textColor="#FFF000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextLTBFullName"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/namebckground"
+        android:hint="Full Name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+    <EditText
+        android:id="@+id/editTextLTBAddress"
+        android:layout_width="254dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/namebckground"
+        android:hint="Address"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/editTextLTBPinCode"
+        android:layout_width="255dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/namebckground"
+        android:hint="Pin Code"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+    <EditText
+        android:id="@+id/editTextLTBContactNumber"
+        android:layout_width="255dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/namebckground"
+        android:hint="Contact Number"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/btnLTBBooking"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Book"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
